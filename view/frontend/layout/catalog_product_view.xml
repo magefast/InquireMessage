@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+  ~ @author magefast@gmail.com www.magefast.com
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Dragonfly\InquireMessage\Block\Button" name="inquiremessage.button" template="Dragonfly_InquireMessage::button.phtml" after="product.info.price"/>
+        </referenceContainer>
+   </body>
+</page>

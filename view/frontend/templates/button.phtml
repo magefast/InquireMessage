@@ -1,0 +1,20 @@
+<?php
+/**
+ * @author magefast@gmail.com www.magefast.com
+ */
+
+$canShow = $this->isEnabled();
+if ($canShow == false) {
+    return '';
+}
+?>
+
+<div class="inquiremessage-button">
+    <a role="button"
+       target="_blank"
+       href="<?php echo $block->getUriString(); ?>"
+       class="btn btn-primary btn-sm"
+       title="<?= __('Inquire on WhatsApp') ?>"
+    ><?= __('Inquire on WhatsApp') ?></a>
+</div>
+

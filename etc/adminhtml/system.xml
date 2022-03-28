@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+  ~ @author magefast@gmail.com www.magefast.com
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="inquiremessage" translate="label" sortOrder="999">
+            <label>Inquire Message WhatsApp</label>
+        </tab>
+        <section id="inquiremessage" translate="label" type="text" sortOrder="999" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>Settings</label>
+            <tab>inquiremessage</tab>
+            <resource>Dragonfly_InquireMessage::config</resource>
+            <group id="settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Inquire Message WhatsApp Settings</label>
+                <field id="status" translate="label" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable Status</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="phone_number" type="text" translate="label comment" showInDefault="1" showInWebsite="1"
+                       showInStore="1" sortOrder="20">
+                    <label>Phone number</label>
+                    <comment><![CDATA[Number format like +1 000-000-0000]]></comment>
+                </field>
+                <field id="text" type="textarea" translate="label comment" showInDefault="1" showInWebsite="1"
+                       showInStore="1" sortOrder="30">
+                    <label>Text Message</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
